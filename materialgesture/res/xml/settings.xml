@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- Trigger Method -->
+    <com.way.materialpreference.PreferenceCategory
+        android:key="trigger_method"
+        android:title="@string/settings_happen_category" >
+
+        <!-- swipe -->
+        <com.way.materialpreference.SwitchPreference
+            android:defaultValue="true"
+            android:key="swipe_from_top_left"
+            android:title="@string/swipe_from_top_left" />
+        <!-- Assistive Touch -->
+        <com.way.materialpreference.SwitchPreference
+            android:defaultValue="false"
+            android:key="use_atouch"
+            android:title="@string/use_atouch" />
+    </com.way.materialpreference.PreferenceCategory>
+    <!-- Trigger Method -->
+    <com.way.materialpreference.PreferenceCategory android:title="@string/settings_service" >
+
+        <!-- Assistive Touch -->
+        <com.way.materialpreference.SwitchPreference
+            android:defaultValue="true"
+            android:key="service_foreground"
+            android:summary="@string/service_foreground_summary"
+            android:title="@string/service_foreground" />
+    </com.way.materialpreference.PreferenceCategory>
+    <!-- About -->
+    <com.way.materialpreference.PreferenceCategory android:title="@string/getsure_about_menu" >
+        <com.way.materialpreference.Preference
+            android:key="about_author"
+            android:summary="@string/settings_self_title"
+            android:title="@string/settings_author_title" >
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="http://blog.csdn.net/way_ping_li" />
+        </com.way.materialpreference.Preference>
+        <com.way.materialpreference.Preference
+            android:key="version"
+            android:title="@string/settings_version_title" />
+    </com.way.materialpreference.PreferenceCategory>
+
+</PreferenceScreen>

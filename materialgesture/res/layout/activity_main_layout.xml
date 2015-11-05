@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/disable_toast_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?android:attr/colorBackground"
+        android:gravity="center"
+        android:padding="12.0dip"
+        android:singleLine="false"
+        android:text="@string/getsure_switch_info"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:visibility="invisible" />
+
+    <FrameLayout
+        android:id="@+id/main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.way.pinnedheaderlistview.PinnedHeaderListView
+            android:id="@android:id/list"
+            style="?android:attr/listViewWhiteStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:choiceMode="singleChoice"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:drawSelectorOnTop="false"
+            android:fadingEdgeLength="16dip"
+            android:fastScrollEnabled="true"
+            android:listSelector="@android:color/transparent"
+            android:scrollbarStyle="outsideOverlay" />
+
+        <TextView
+            android:id="@android:id/empty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:singleLine="false"
+            android:text="@string/no_getsure"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:visibility="invisible" />
+    </FrameLayout>
+
+    <com.way.fab.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="16dp"
+        android:elevation="6dp"
+        android:src="@drawable/ic_add_white_24dp"
+        fab:fab_colorNormal="@color/accent"
+        fab:fab_colorPressed="@color/accent_pressed"
+        fab:fab_elevationCompat="4dp" />
+
+</FrameLayout>

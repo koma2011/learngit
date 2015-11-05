@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parentLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/textview1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dip"
+        android:gravity="center"
+        android:textAppearance="?android:textAppearanceLarge" />
+
+    <FrameLayout
+        android:id="@+id/gesture_create_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center" >
+
+        <com.way.gesture.view.GestureOverlayView
+            android:id="@+id/gesture_overlay_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            fab:cardCornerRadius="8dp"
+            fab:gestureColor="@android:color/white"
+            fab:uncertainGestureColor="#48ffffff" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/menu_create"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dip"
+        android:orientation="horizontal" >
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/menu_redo_item"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dip"
+            android:layout_weight="1"
+            android:background="@drawable/btn_selector"
+            android:text="@string/gestureRedo"
+            android:textAppearance="?android:attr/textAppearanceInverse" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/menu_ok_item"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dip"
+            android:layout_weight="1"
+            android:background="@drawable/btn_selector"
+            android:enabled="false"
+            android:text="@string/gestureOK"
+            android:textAppearance="?android:attr/textAppearanceInverse" />
+    </LinearLayout>
+
+    <com.way.fab.FloatingActionMenu
+        android:id="@+id/menu_edit"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:elevation="8dp"
+        android:padding="16dp"
+        fab:menu_backgroundColor="#ccffffff"
+        fab:menu_colorNormal="@color/accent"
+        fab:menu_colorPressed="@color/accent_pressed"
+        fab:menu_labels_ellipsize="end"
+        fab:menu_labels_singleLine="true"
+        fab:menu_openDirection="up" >
+
+        <com.way.fab.FloatingActionButton
+            android:id="@+id/menu_delete_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_delete_white_24dp"
+            fab:fab_colorNormal="@color/accent"
+            fab:fab_colorPressed="@color/accent_pressed"
+            fab:fab_label="@string/gestureDelete" />
+
+        <com.way.fab.FloatingActionButton
+            android:id="@+id/menu_edit_gesture_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_format_paint_white_24dp"
+            fab:fab_colorNormal="@color/accent"
+            fab:fab_colorPressed="@color/accent_pressed"
+            fab:fab_label="@string/gestureEditGesture" />
+
+        <com.way.fab.FloatingActionButton
+            android:id="@+id/menu_edit_job_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_edit"
+            fab:fab_colorNormal="@color/accent"
+            fab:fab_colorPressed="@color/accent_pressed"
+            fab:fab_label="@string/gestureEditJob" />
+    </com.way.fab.FloatingActionMenu>
+
+</RelativeLayout>

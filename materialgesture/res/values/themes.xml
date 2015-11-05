@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.Gesture" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+
+        <!-- 消除ActionBar下的阴影线 -->
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary</item>
+        <item name="colorAccent">@color/accent</item>
+        <item name="android:actionBarStyle">@style/GestureActionBarStyle</item>
+    </style>
+
+    <style name="GestureActionBarStyle" parent="@style/Widget.AppCompat.Light.ActionBar.Solid">
+        <item name="android:background">@color/primary</item>
+        <item name="elevation">@dimen/action_bar_elevation</item>
+        <!-- Empty icon -->
+        <item name="android:icon">@android:color/transparent</item>
+    </style>
+
+</resources>

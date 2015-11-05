@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Default GestureOverlayView style. -->
+    <attr name="gestureOverlayViewStyle" format="reference" />
+
+    <!-- GestureOverlayView specific attributes. These attributes are used to configure
+     a GestureOverlayView from XML. -->
+    <declare-styleable name="GestureOverlayView">
+        <!-- Width of the stroke used to draw the gesture. -->
+        <attr name="gestureStrokeWidth" format="float" />
+        <!-- Color used to draw a gesture. -->
+        <attr name="gestureColor" format="color" />
+        <!-- Color used to draw the user's strokes until we are sure it's a gesture. -->
+        <attr name="uncertainGestureColor" format="color" />
+        <!-- Time, in milliseconds, to wait before the gesture fades out after the user
+             is done drawing it. -->
+        <attr name="fadeOffset" format="integer" />
+        <!-- Duration, in milliseconds, of the fade out effect after the user is done
+             drawing a gesture. -->
+        <attr name="fadeDuration" format="integer" />
+
+        <!-- Minimum length of a stroke before it is recognized as a gesture. -->
+        <attr name="gestureStrokeLengthThreshold" format="float" />
+        <!-- Squareness threshold of a stroke before it is recognized as a gesture. -->
+        <attr name="gestureStrokeSquarenessThreshold" format="float" />
+        <!-- Minimum curve angle a stroke must contain before it is recognized as a gesture. -->
+        <attr name="gestureStrokeAngleThreshold" format="float" />
+        <!-- Defines whether the overlay should intercept the motion events when a gesture
+             is recognized. -->
+        <attr name="eventsInterceptionEnabled" format="boolean" />
+        <!-- Defines whether the gesture will automatically fade out after being recognized. -->
+        <attr name="fadeEnabled" format="boolean" />
+        <!-- Indicates whether horizontal (when the orientation is vertical) or vertical
+             (when orientation is horizontal) strokes automatically define a gesture. -->
+        <attr name="orientation" format="integer"/>
+    </declare-styleable>
+
+
+</resources>

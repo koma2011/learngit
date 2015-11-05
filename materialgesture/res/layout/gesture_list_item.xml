@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:gesture="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/list_item_height"
+    android:orientation="vertical" >
+
+    <com.way.widget.SlidingLeftViewGroup
+        android:id="@+id/mymultiViewGroup"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/list_item_height"
+        android:gravity="center_vertical" >
+
+        <LinearLayout
+            android:id="@+id/item_ll"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="?android:attr/listChoiceBackgroundIndicator"
+            android:descendantFocusability="blocksDescendants"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/list_item_height" >
+
+                <com.way.gesture.view.GestureOverlayView
+                    android:id="@+id/gestureImageView"
+                    android:layout_width="@dimen/gesture_image_size_small"
+                    android:layout_height="@dimen/gesture_image_size_small"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16.0dip"
+                    gesture:cardCornerRadius="4dp"
+                    gesture:cardElevation="0dp"
+                    gesture:cardMaxElevation="0dp"
+                    gesture:contentPadding="5dp"
+                    gesture:gestureColor="@android:color/white"
+                    gesture:gestureStrokeWidth="3" />
+
+                <TextView
+                    android:id="@+id/textview"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="16.0dip"
+                    android:layout_toRightOf="@id/gestureImageView"
+                    android:ellipsize="marquee"
+                    android:gravity="left|center_vertical"
+                    android:singleLine="true"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/item_append_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/list_item_height"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/gestures_edit_gesture"
+                android:layout_width="@dimen/list_item_height"
+                android:layout_height="@dimen/list_item_height"
+                android:background="@drawable/btn_top_selector"
+                android:text="@string/gestureEditGesture"
+                android:textColor="@android:color/white" >
+            </Button>
+
+            <Button
+                android:id="@+id/gestures_edit_name"
+                android:layout_width="@dimen/list_item_height"
+                android:layout_height="@dimen/list_item_height"
+                android:background="@drawable/btn_edit_selector"
+                android:text="@string/gestureEditJob"
+                android:textColor="@android:color/white" >
+            </Button>
+
+            <Button
+                android:id="@+id/gestures_delete"
+                android:layout_width="@dimen/list_item_height"
+                android:layout_height="@dimen/list_item_height"
+                android:background="@drawable/btn_delete_selector"
+                android:text="@string/gestureDelete"
+                android:textColor="@android:color/white" >
+            </Button>
+        </LinearLayout>
+    </com.way.widget.SlidingLeftViewGroup>
+
+</RelativeLayout>

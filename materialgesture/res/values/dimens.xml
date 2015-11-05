@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="atouch_view_width">48dip</dimen>
+    <dimen name="float_touch_view_width">60dip</dimen>
+    <dimen name="action_bar_elevation">0dip</dimen>
+    <dimen name="list_item_height">64dip</dimen>
+    <dimen name="gesture_image_size_small">48dip</dimen>
+    <dimen name="corner_radius_max">7.5dip</dimen>
+    <dimen name="corner_radius_mid">5dip</dimen>
+    <dimen name="corner_radius_min">2.5dip</dimen>
+    <dimen name="alert_dialog_padding_material">24dp</dimen>
+    <dimen name="alert_dialog_padding_top_material">18dp</dimen>
+    <dimen name="notification_app_icon_size">64dp</dimen>
+    <dimen name="contact_list_section_header_width">48dp</dimen>
+    <dimen name="avatar_width_height">40dip</dimen>
+
+    <item name="letter_to_tile_ratio" type="dimen">67%</item>
+	<dimen name="fab_normal_translation">72dp</dimen>
+</resources>

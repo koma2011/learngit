@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/section_header"
+    android:layout_width="@dimen/contact_list_section_header_width"
+    android:layout_height="?android:attr/listPreferredItemHeight"
+    android:paddingLeft="16dip"
+    android:gravity="center_vertical"
+    android:textAppearance="@style/SectionHeaderStyle" />

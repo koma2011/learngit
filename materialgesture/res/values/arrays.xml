@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="exclude_package_names" translatable="false">
+         <item>com.way.gesture</item>  
+         <item>com.ape.myseneschal</item>
+    </string-array>
+
+</resources>

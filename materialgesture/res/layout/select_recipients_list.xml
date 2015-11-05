@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.way.pinnedheaderlistview.PinnedHeaderListView
+        android:id="@android:id/list"
+        style="?android:attr/listViewWhiteStyle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:drawSelectorOnTop="false"
+        android:fadingEdgeLength="16dip"
+        android:listSelector="@android:color/transparent"
+        android:fastScrollEnabled="true"
+        android:choiceMode="singleChoice"
+        android:scrollbarStyle="outsideOverlay" />
+
+    <TextView
+        android:id="@android:id/empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</FrameLayout>
